@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body .video {
+  position: fixed;
+  object-fit: cover;
+  width: 400px;
+  height: 900px;
+}
+body .content {
+  height: fit-content;
+  position: fixed;
+  bottom: 6rem;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  width: 22rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0 2rem 0 4rem;
+  margin-bottom: 2rem;
+}
+body .datos {
+  width: 100%;
+  height: 8rem;
+  margin-top: 4rem;
+}
+body .datos .link {
+  display: flex;
+  margin-top: 2rem;
+  margin-left: 4rem;
+  font-size: 24px;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body .textos {
+  position: fixed;
+  margin: 2rem 1rem;
+  left: 0;
+  width: 95%;
+}
+body .texto {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
