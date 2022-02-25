@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("../img/padel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 830px;
+}
+
+h2{
+    margin-top: 1rem;
+    margin-left: 3px;
+    color: white;
+}
+.sesion{
+  
+    margin-top: 2rem;
+    height: fit-content;
+}
+
+.label{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 10px;
+    color: white;
+    
+}
+.datos{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    border:none;
+    border-bottom: 1px solid white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.boton{
+    margin-left: 10px;
+    margin-top: 3%;
+    width: 80%;
+   height: 50px;
+}
+
