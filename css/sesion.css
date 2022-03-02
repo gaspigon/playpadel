@@ -9,38 +9,32 @@ body{
     height: 830px;
 }
 
-h2{
-    margin-top: 1rem;
-    margin-left: 3px;
-    color: white;
-}
-.sesion{
-  
-    margin-top: 2rem;
-    height: fit-content;
-}
-
-.label{
-    display: flex;
-    margin-top: 15px;
-    margin-left: 10px;
-    color: white;
-    
-}
-.datos{
+h1{
     display: flex;
     justify-content: center;
-    width: 80%;
-    border:none;
-    border-bottom: 1px solid white;
-    margin-top: 10px;
-    margin-left: 10px;
+    color: white;
+}
+
+.check_datos{
+    color: white;
+    margin-left: 30px;
+}
+
+.email, .contraseña, .boton{
+    margin: auto;
+    margin-top: 1rem;
 }
 
 .boton{
-    margin-left: 10px;
-    margin-top: 3%;
-    width: 80%;
-   height: 50px;
+    width: 100%;
+    height: 3rem;
+    border-radius: 30px;
+    margin-left: 30px;
 }
 
+.img_titulo{
+    width: 100%;
+    object-fit: cover;
+    margin-top: 20px;
+    
+}
