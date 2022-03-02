@@ -13,6 +13,7 @@ h1{
     display: flex;
     justify-content: center;
     color: white;
+    
 }
 
 .check_datos{
@@ -36,5 +37,33 @@ h1{
     width: 100%;
     object-fit: cover;
     margin-top: 20px;
+    margin-bottom: 80px;
     
 }
+
+.texto_inicio{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: white;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.img_icono{
+    width: 4rem;
+    
+}
+
+.img_icono1{
+    width: 3rem;
+    height: 3rem;
+}
+
+.iconos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    height: fit-content;
+}
+
