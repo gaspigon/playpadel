@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-image: url("../img/padel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 830px;
+
+}
+
+h1{
+    
+    display: flex;
+    justify-content: center;
+}
+
+
+.email, .contraseña{
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 30px;
+    
+}
+
+.texto{
+    margin-top: 20px;
+    margin-left: 5px;
+    color: white;
+}
