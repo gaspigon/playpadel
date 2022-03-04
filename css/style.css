@@ -17,7 +17,7 @@ body .content {
   color: white;
   width: 22rem;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin: 0 2rem 0 4rem;
+  margin: 0 2rem 0 2rem;
   margin-bottom: 2rem;
 }
 body .datos {
@@ -35,8 +35,8 @@ body .datos .link {
 }
 body .textos {
   position: fixed;
-  margin: 2rem 1rem;
-  left: 0;
+  margin: 2rem  ;
+  right: 0;
   width: 95%;
 }
 body .texto {

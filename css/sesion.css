@@ -23,7 +23,7 @@ h1{
 
 .email, .contraseña, .boton{
     margin: auto;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .boton{
@@ -34,12 +34,25 @@ h1{
 }
 
 .img_titulo{
-    width: 100%;
-    object-fit: cover;
-    margin-top: 20px;
-    margin-bottom: 80px;
-    
+    width: 500px;
+    height: 200px;
 }
+
+.box{
+    height: 200px;
+}
+
+.box-img{
+    height: 150px;
+}
+
+.img-box{
+    position: relative;
+    bottom: 30px;
+    left: 50px;
+   height: 300px;
+}
+
 
 .texto_inicio{
     display: flex;
