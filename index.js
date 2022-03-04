@@ -13,9 +13,9 @@ document.getElementById("submit").addEventListener('click',function(){
 
 let valorEmail = localStorage.getItem('e-mail');
 let valorContraseña = localStorage.getItem('pass');
-let valorContraseña2 = localStorage.getItem('pass1');
 
-console.log(valorEmail,valorContraseña,valorContraseña2);
+
+console.log(valorEmail,valorContraseña);
 
 
 

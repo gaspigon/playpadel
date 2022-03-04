@@ -3,11 +3,11 @@
 let datos = function(){
     let mail = document.getElementById("email").value;
     let pass1 = document.getElementById("pass").value;
-    let pass2 = document.getElementById("pass1").value;
+    let nombre = document.getElementById("name").value;
 
     localStorage.setItem('e-mail',mail);
     localStorage.setItem('pass',pass1);
-    localStorage.setItem('pass1',pass2);
+    localStorage.setItem('name',nombre);
 
     location.href = "index.html";
 }

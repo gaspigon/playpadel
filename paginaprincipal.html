@@ -9,29 +9,44 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
    
     <link rel="stylesheet" href="css/principal.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <title>Document</title>
 </head>
 <body>
-    <h1>Hola, </h1>
-
-    <div class="container">
+    
+        <h1 id="titulo_nombre" data-aos="fade-right"></h1>
+        <h3  data-aos="fade-down">¿Empezamos?</h3>
+    
+    
+        
+    <div class="container" data-aos="fade-down" >
         <div class="row">
+             <div class="col-5 col">
+                 <a class="links" href="reservar.html">
+                    <h4>Reservar</h4>
+                    <img class="iconos" src="img/reserva.png" alt="">
+                 </a>
+                </div>
+            
             <div class="col-5 col">
-                <h4>Reservar</h4>
-                <img class="iconos" src="img/reserva.png" alt="">
+                <a class="links" href="jugadores.html">
+                    <h4>Buscar jugadores</h4>
+                    <img class="iconos" src="img/grupo.png" alt="">
+                </a>
             </div>
             <div class="col-5 col">
-                <h4>Buscar jugadores</h4>
-                <img class="iconos" src="img/grupo.png" alt="">
+                <a class="links" href="torneos.html">
+                    <h4>Torneos</h4>
+                    <img class="iconos" src="img/trofeo.png" alt=""> 
+                </a>
             </div>
             <div class="col-5 col">
-                <h4>Torneos</h4>
-                <img class="iconos" src="img/trofeo.png" alt="">
-            </div>
-            <div class="col-5 col">
-                <h4>Clubes</h4>
-                <img class="iconos" src="img/mapa.png" alt="">
+                <a class="links" href="club.html">
+                    <h4>Clubes</h4>
+                    <img class="iconos" src="img/mapa.png" alt="">
+                </a>
             </div>
 
         </div>
@@ -55,6 +70,12 @@
 
 
 
+
     <script src="pagPrincipal.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
