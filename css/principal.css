@@ -44,3 +44,11 @@ h3{
     text-decoration: none;
     color: rgb(83, 81, 81);
 }
+
+.img_club{
+    width: 50%;
+    border-radius: 20px;
+    margin: auto;
+ 
+}
+
