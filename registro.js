@@ -6,6 +6,7 @@ class Datos {
         this.nombre = nombre;
         this.email = email;
         this.contraseña = contraseña;
+
     }
 }
 
@@ -18,8 +19,14 @@ const registro = document.getElementById("formulario"); //obtenemos el formulari
     let mail = document.getElementById("email");
     let pass1 = document.getElementById("pass");
     let nombre = document.getElementById("name");
+    let modal = document.getElementById("miModal");
+    let parrafo = document.getElementById("parrafo");
+    
 
-
+    //funcion que inclute el redireccionamiento a index
+    function volverIndex (){
+        location.href = "index.html";
+    }
 
 
 //obtenemos el evento de enviar
@@ -28,44 +35,22 @@ registro.addEventListener("submit", envioFormulario); //llamamos a la funcion en
 function envioFormulario(e){
     e.preventDefault(); //frenamos la acrualizacion de la pagina
 
-    let datoNuevo = new Datos(nombre.value, email.value, pass1.value);
+    let datoNuevo = new Datos(nombre.value, email.value, pass1.value, );
 
-    //let idDatos = "Dato"+contador; 
-    //contador++;
+    
 
     //limpiar inputs
     nombre.value = "";
     email.value = "";
     pass1.value = "";
 
-    localStorage.setItem("datos",JSON.stringify(datoNuevo));
-   
 
+    localStorage.setItem('datos',JSON.stringify(datoNuevo)); //tomo datoNuevo.email como el key para guardar en el local
+   
+    parrafo.innerText = "Gracias " + datoNuevo.nombre ;
+    modal.style.display = "block";
     
-    location.href = "index.html";
+    //le pongo timeOut para que el mensaje se pueda leer unos dos segundos
+    setTimeout(volverIndex, 2000);
 }
 
-/*
-
-    console.log(mail,pass1,nombre);
-
-    localStorage.setItem('e-mail',mail);
-    localStorage.setItem('pass',pass1);
-    localStorage.setItem('name',nombre);
-
-    
-    //location.href = "index.html";
-
-
-
-
-
-/*
-
-    localStorage.setItem('e-mail',mail);
-    localStorage.setItem('pass',pass1);
-    localStorage.setItem('name',nombre);
-
-    
-    location.href = "index.html";
-*/

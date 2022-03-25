@@ -38,3 +38,25 @@ h1{
     margin-left: 5px;
     color: white;
 }
+
+.modal{
+    display: none;
+    position: absolute;
+    top: 280px;
+    left: 70px;
+    border-radius: 10px;
+    z-index: 1; /* Sit on top */
+    width: 60%; /* Full width */
+    height: 10%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9);
+}
+.parrafo{
+    font-size: 20px;
+}
+
+.parrafo, .titulo_modal{
+    display: flex;
+    justify-content: center;
+    color: white;
+}

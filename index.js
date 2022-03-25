@@ -12,8 +12,10 @@ class InicioSesion {
 //PEDIMOS DE LOCAL STORAGE LOS DATOS DE REGISTRO
 let valorDatos = localStorage.getItem('datos');
 
+
 //PASAMOS LOS DATOS DE STRING A OBJETO
 let pasoParse = JSON.parse(valorDatos);
+console.log(pasoParse);
 
 
 
