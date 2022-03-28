@@ -80,3 +80,26 @@ h1{
     height: fit-content;
 }
 
+.hola{
+    border: 10px solid blue;
+}
+
+.box-msj{
+    display: none;
+    position: absolute;
+    top: 280px;
+    left: 70px;
+    border-radius: 10px;
+    z-index: 1; /* Sit on top */
+    width: 60%; /* Full width */
+    height: 10%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.9);
+}
+
+.parrafo, .titulo_modal{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
