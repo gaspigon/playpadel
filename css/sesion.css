@@ -103,3 +103,8 @@ h1{
     color: white;
 }
 
+.inc{
+    display: none;
+    color: red;
+    font-weight: bold;
+}

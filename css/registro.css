@@ -68,3 +68,9 @@ h1{
     justify-content: center;
     color: white;
 }
+
+.incomplete{
+    display: none;
+    color: red;
+    font-weight: bold;
+}

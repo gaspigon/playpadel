@@ -29,6 +29,7 @@ let password = document.getElementById("pass");
 let boxMsj = document.getElementById("miModal");
 let parrafo = document.getElementById("parrafo");
 let titulo = document.getElementById("titulo");
+let inc = document.getElementsByClassName("inc");
 
 
 //EVENTO SUBMIT DEL FORMULARIO CON LA FUNCION VALIDAR LOS DATOS
@@ -45,34 +46,14 @@ function validacion(e){
 
 
     if(password.value == "" || email.value == ""){
-        boxMsj.style.display = "block";
-        titulo.innerText = "Error";
-        parrafo.innerText = "Datos Incorrectos";
-        email.classList.add('error1');
-
-        setTimeout(()=>{
-            boxMsj.style.display = "none";
-        },1000);
+        inc[0].style.display = "block";
+        inc[1].style.display = "block";
     }
         else if(datoInicio.email != pasoParse.email){
-            boxMsj.style.display = "block";
-            titulo.innerText = "Error";
-            parrafo.innerText = "Email Incorrecto";
-            email.classList.add('error1');
-
-            setTimeout(()=>{
-                boxMsj.style.display = "none";
-            },1000);
+            inc[0].style.display = "block";
     }
         else if(datoInicio.contraseña != pasoParse.contraseña){
-            boxMsj.style.display = "block";
-            titulo.innerText = "Error";
-            parrafo.innerText = "Contraseña Incorrecta";
-            email.classList.add('error1');
-
-            setTimeout(()=>{
-                boxMsj.style.display = "none";
-            },1000);
+            inc[1].style.display = "block";
         }
         else if(datoInicio.email === pasoParse.email && datoInicio.contraseña === pasoParse.contraseña){
             location.href = "paginaprincipal.html";

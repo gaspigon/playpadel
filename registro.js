@@ -20,6 +20,7 @@ const registro = document.getElementById("formulario"); //obtenemos el formulari
     let pass1 = document.getElementById("pass");
     let nombre = document.getElementById("name");
     let modal = document.getElementById("miModal");
+    let incompleto = document.getElementsByClassName("incomplete");
     let parrafo = document.getElementById("parrafo");
     let titulo = document.getElementById("titulo");
     let error = document.getElementsByClassName("form-control");
@@ -49,48 +50,37 @@ if(nombre.value == "" && email.value =="" && pass1.value == ""){
         titulo.innerText = "error";
         parrafo.innerText = "Campos Incompletos";
         modal.style.display = "block";
+
         setTimeout(()=>{
             modal.style.display = "none";
         },1000);
 
+        console.log(incompleto.length);
+        for (let i = 0; i < incompleto.length; i++) {
+            incompleto[i].style.display = "block";
+        }
         mail.classList.add('error');
         nombre.classList.add('error');
         pass1.classList.add('error');
+
         
 
 }   
   //si el campo de nombre esta vacio
     else if(nombre.value == ""){
-        titulo.innerText = "error";
-        parrafo.innerText = "Nombre Incompleto";
-        modal.style.display = "block";
-        setTimeout(()=>{
-            modal.style.display = "none";
-        },1000);
-
+        console.log(incompleto.length);
+        incompleto[0].style.display = "block";
         nombre.classList.add('error');
 }
     //si el campo de email esta vacio
     else if(mail.value == ""){
-        titulo.innerText = "error";
-        parrafo.innerText = "Email Incompleto";
-        modal.style.display = "block";
-        setTimeout(()=>{
-            modal.style.display = "none";
-        },1000);
+        incompleto[1].style.display = "block";
 
         mail.classList.add('error');
 }
     //si el campo de contraseña esta vacio
     else if(pass1.value == ""){
-        titulo.innerText = "error";
-        parrafo.innerText = "Contraseña Incompleta";
-        modal.style.display = "block";
-        //se espera tiempo para que se vea el mensaje 
-        setTimeout(()=>{
-            modal.style.display = "none";
-        },1000);
-
+        incompleto[2].style.display = "block";
         pass1.classList.add('error');
 }
     
@@ -108,9 +98,15 @@ else{
 
     localStorage.setItem('datos',JSON.stringify(datoNuevo)); //tomo datoNuevo.email como el key para guardar en el local
     
-    titulo.innerText = "Registro Existoso!"
-    parrafo.innerText = "Gracias " + datoNuevo.nombre ;
-    modal.style.display = "block";
+  
+Swal.fire({
+  position: 'center',
+  width: 200,
+  icon: 'success',
+  title: 'Registro Exitoso',
+  showConfirmButton: false,
+  timer: 1500
+})
     
     //le pongo timeOut para que el mensaje se pueda leer unos dos segundos
     setTimeout(()=>{
