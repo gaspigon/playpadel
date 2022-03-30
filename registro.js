@@ -54,6 +54,20 @@ if(nombre.value == "" && email.value =="" && pass1.value == ""){
         nombre.classList.add('error');
         pass1.classList.add('error');
 
+        nombre.addEventListener("keydown",()=>{
+            incompleto[0].style.display = "none";
+        });
+
+        
+        mail.addEventListener("keydown",()=>{
+            incompleto[1].style.display = "none";
+        });
+
+        
+        pass1.addEventListener("keydown",()=>{
+            incompleto[2].style.display = "none";
+        });
+
         
 
 }   
@@ -62,17 +76,29 @@ if(nombre.value == "" && email.value =="" && pass1.value == ""){
 
         incompleto[0].style.display = "block";
         nombre.classList.add('error');
+
+        nombre.addEventListener("keydown",()=>{
+            incompleto[0].style.display = "none";
+        });
 }
     //si el campo de email esta vacio
     else if(mail.value == ""){
         incompleto[1].style.display = "block";
 
         mail.classList.add('error');
+
+        mail.addEventListener("keydown",()=>{
+            incompleto[1].style.display = "none";
+        });
 }
     //si el campo de contraseña esta vacio
     else if(pass1.value == ""){
         incompleto[2].style.display = "block";
         pass1.classList.add('error');
+
+        pass1.addEventListener("keydown",()=>{
+            incompleto[2].style.display = "none";
+        });
 }
     
 else{

@@ -48,12 +48,27 @@ function validacion(e){
     if(password.value == "" || email.value == ""){
         inc[0].style.display = "block";
         inc[1].style.display = "block";
+
+        email.addEventListener("keydown",()=>{
+            inc[0].style.display = "none";
+        });
+
+        password.addEventListener("keydown",()=>{
+            inc[1].style.display = "none";
+        });
     }
         else if(datoInicio.email != pasoParse.email){
             inc[0].style.display = "block";
+
+            email.addEventListener("keydown",()=>{
+                inc[0].style.display = "none";
+            });
     }
         else if(datoInicio.contraseña != pasoParse.contraseña){
             inc[1].style.display = "block";
+            password.addEventListener("keydown",()=>{
+                inc[1].style.display = "none";
+            });
         }
         else if(datoInicio.email === pasoParse.email && datoInicio.contraseña === pasoParse.contraseña){
             location.href = "paginaprincipal.html";
