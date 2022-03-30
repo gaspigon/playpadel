@@ -47,15 +47,6 @@ function envioFormulario(e){
     
 //Si todos los campos estan vacios da error de datos imcompletos
 if(nombre.value == "" && email.value =="" && pass1.value == ""){
-        titulo.innerText = "error";
-        parrafo.innerText = "Campos Incompletos";
-        modal.style.display = "block";
-
-        setTimeout(()=>{
-            modal.style.display = "none";
-        },1000);
-
-        console.log(incompleto.length);
         for (let i = 0; i < incompleto.length; i++) {
             incompleto[i].style.display = "block";
         }
@@ -68,7 +59,7 @@ if(nombre.value == "" && email.value =="" && pass1.value == ""){
 }   
   //si el campo de nombre esta vacio
     else if(nombre.value == ""){
-        console.log(incompleto.length);
+
         incompleto[0].style.display = "block";
         nombre.classList.add('error');
 }
