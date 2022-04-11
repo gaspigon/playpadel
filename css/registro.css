@@ -74,3 +74,10 @@ h1{
     color: red;
     font-weight: bold;
 }
+
+.img_titulo{
+    width: 100%;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
