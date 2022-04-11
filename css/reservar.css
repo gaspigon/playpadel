@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    background-image: url();
+}
+
 h1{
     display: flex;
     justify-content: center;

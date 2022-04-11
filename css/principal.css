@@ -82,5 +82,22 @@ h3{
     justify-content: space-between;
     margin: 0 6%;
     margin-top: 3%;
+    
 
+}
+
+.notif{
+    position: absolute;
+    z-index: 1;
+    left: 50px;
+    bottom: 28px;
+    color: rgb(198, 12, 12);
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: none;
+    height: 23px;
+    width: 12px;
+
+    
+ 
 }

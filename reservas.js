@@ -1,10 +1,5 @@
-/* 
-let DateTime = luxon.DateTime;
 
-DateTime.now().setZone("America/Buenos Aires");
 
-console.log(DateTime.now().setZone("America/Buenos_Aires").toString());
-*/
 
 //clase de datos para el registro de personas
 class Reserva {
@@ -18,10 +13,12 @@ const formulario = document.getElementById("formReserva");
 
 let dia = document.getElementById("date");
 let horario = document.getElementById("hora");
+let id = Math.floor(Math.random() * (100-0+1)) +1;
 
 
 formulario.addEventListener("submit", (e)=>{
     e.preventDefault();
+
 
     let reservaNueva = new Reserva (dia.value, horario.value);
     
@@ -37,8 +34,9 @@ formulario.addEventListener("submit", (e)=>{
         
         }).showToast();
 
-        localStorage.setItem('reserva', JSON.stringify(reservaNueva));
+        localStorage.setItem(id, JSON.stringify(reservaNueva));
         
+
         console.log(reservaNueva);
 
         //volvemos a la pagina principal
@@ -47,4 +45,6 @@ formulario.addEventListener("submit", (e)=>{
        },2200);
 
 })
+
+
 
