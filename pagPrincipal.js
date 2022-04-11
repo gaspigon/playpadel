@@ -37,7 +37,17 @@ for (let i=0 ; i<localStorage.length; i++){
 
         botonNotificacion.addEventListener("click",(e)=>{
             e.preventDefault();
-            console.log("estoy aca");
+             
+                Swal.fire({
+                    title: 'Tus reservas' ,
+
+                    showClass: {
+                    popup: 'animate__animated animate__fadeInDown'
+                    },
+                    hideClass: {
+                    popup: 'animate__animated animate__fadeOutUp'
+                    }
+                })
             for(let i=0 ; i<localStorage.length; i++){
                 let clave = localStorage.key(i);
                 if(clave > 0 && clave <=100){
