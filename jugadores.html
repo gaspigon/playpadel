@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/jugadores.css">
     <title>Buscar Jugadores</title>
 </head>
 <body>
     <h1>Buscar Jugadores</h1>
+
+
+<form action="" class="box-input" id="form-buscar">
+    <div>
+  <p class="p-item">Nivel de jugador a buscar: </p>
+      <p class="p-item"> (1: Inicial | 2: Intermedio | 3: Avanzado)</p>  
+        
+      <select class="item" name="nivel" id="nivel">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+      </select>
+
+    <p class="p-item">Posicion de jugador a buscar:</p>
+
+        <select class="item" name="posicion" id="posicion">
+            <option value="izquierda">Izquierda</option>
+            <option value="derecha">Derecha</option>
+        </select>
+
+    <input class="item" type="submit" value="Buscar" id="submit">
+    </div>
+</form>
+
+
+    <div id="box-jugadores" class="container">
+        <div class="row" id="row">
+
+        </div>
+        
+
+    
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script src="jugadores.js"></script>
 </body>
 </html>

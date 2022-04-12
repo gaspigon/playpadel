@@ -1,0 +1,14 @@
+[
+    {"nombre": "Gabriel", "nivel": "1", "posicion":"derecha"},
+    {"nombre": "Esteban", "nivel": "2", "posicion":"derecha"},
+    {"nombre": "Matias", "nivel": "3", "posicion":"izquierda"},
+    {"nombre": "Tomas", "nivel": "2", "posicion":"derecha"},
+    {"nombre": "Mariana", "nivel": "1", "posicion":"izquierda"},
+    {"nombre": "Juan", "nivel": "3", "posicion":"derecha"},
+    {"nombre": "Horacio", "nivel": "2", "posicion":"izquierda"},
+    {"nombre": "Lucas", "nivel": "3", "posicion":"izquierda"},
+    {"nombre": "Sergio", "nivel": "1", "posicion":"derecha"},
+    {"nombre": "Pablo", "nivel": "3", "posicion":"izquierda"},
+    {"nombre": "Julian", "nivel": "3", "posicion":"derecha"}
+
+]
