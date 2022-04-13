@@ -1,4 +1,6 @@
-const lista = document.getElementById("listado");
+
+
+
 const box = document.getElementById("row");
 
 // fetch('/datos.json')
@@ -27,28 +29,33 @@ let posicion = document.getElementById("posicion");
 formulario.addEventListener("submit", (e)=>{
     e.preventDefault();
 
+   box.innerHTML = "";
 
-
-
-
-
+    
 fetch('datos.json')
     .then ((res) => res.json())
     .then( (data) => {
 
+       
 
         data.forEach((jugador) => {
-            const p = document.createElement('p');
+            const div = document.createElement('div');
+            div.classList.add("col-4");
+            div.classList.add("box-juga");
              if(nivel.value == jugador.nivel && posicion.value == jugador.posicion){
-            p.innerHTML = `
-                        <div clas="col-4">
-                            <h4>${jugador.nombre}</h4>
-                            <p>${jugador.nivel}</p>
-                            <p>${jugador.posicion}</p>
-                        </div>            
+            div.innerHTML = `
+                <p class="p-jug">${jugador.nombre}
+                    <ul class="lista-jug">
+                        <li>Nivel: ${jugador.nivel}</li>
+                        <li>Pos: ${jugador.posicion}</li>
+                        
+                    </ul>
+
+                    <button class="btn-contacto">Contactar</button>
+            
               `
 
-             box.append(p);
+             box.append(div);
              }
    
     })
