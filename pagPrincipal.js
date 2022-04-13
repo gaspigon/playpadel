@@ -27,6 +27,8 @@ titulo.innerHTML = "Hola " + nombre.nombre  + ",";
     console.log("error");
 }
 
+//Aca es donde del local storage trato de mostrar que tenes una notificacion nueva recorriendo el localstorage
+//uso contador para mostrar el numero de la notificacion que cuando tocas se borra como "leido"
 for (let i=0 ; i<localStorage.length; i++){
     let key = localStorage.key(i);
     if(key > 0 && key <= 100){
