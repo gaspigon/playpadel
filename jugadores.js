@@ -1,43 +1,32 @@
+//UTILIZO FECTH PARA PEDIR DATOS AL ARCHIVO DATOS.JSON
 
-
-
+//traigo el elemento div donde voy a crear lo capurado de el .json
 const box = document.getElementById("row");
 
-// fetch('/datos.json')
-//     .then( (res) => res.json())
-//     .then( (data) =>{
 
-//         data.forEach((jugador) => {
-//             const li = document.createElement('li');
-//             li.innerHTML = `
-//                 <h4>${jugador.nombre}</h4>
-//                 <p>${jugador.nivel}</p>
-//                 <p>${jugador.posicion}</p>
-//                 <hr/>
-//                 `
-//                 lista.append(li);
-//         })
-//     })
-
+//capturo formulario
 const formulario = document.getElementById("form-buscar");
 
+//sus valores
 let nivel = document.getElementById("nivel");
 let posicion = document.getElementById("posicion");
 
 
-
+//evento submit del form
 formulario.addEventListener("submit", (e)=>{
     e.preventDefault();
 
+//le doy valor vacio a la caja para que no se superpongan los div
    box.innerHTML = "";
 
-    
+//utilzo fetch para comunicarme con el .json   
 fetch('datos.json')
     .then ((res) => res.json())
     .then( (data) => {
 
        
-
+        //recorro el json y creo el elemento div para desp mostrarlo
+        //si el nivel de jugador y la posicion coinciden con la busqueda lo muestro
         data.forEach((jugador) => {
             const div = document.createElement('div');
             div.classList.add("col-4");
