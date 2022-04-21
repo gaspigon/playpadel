@@ -25,9 +25,9 @@ formulario.addEventListener("submit", (e)=>{
     Toastify({
 
         text: "Turno Reservado " + horario.value ,
-        gravity: "top", // `top` or `bottom`
-        position: "right", // `left`, `center` or `right`
-        duration: 2000,
+        gravity: "top", 
+        position: "right", 
+        duration: 1000,
         style: {
             background: "linear-gradient(to right, #00b09b, #96c93d)",
           },
@@ -42,7 +42,7 @@ formulario.addEventListener("submit", (e)=>{
         //volvemos a la pagina principal
         setTimeout(()=>{
            location.href = "paginaprincipal.html";
-       },2200);
+       },1200);
 
 })
 
