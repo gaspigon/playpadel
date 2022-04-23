@@ -1,0 +1,11 @@
+[
+    
+        {"nivel": "sexta", "club":"Le club", "horario": "21:00hs", "pago":"$1000","dia":"Martes"},
+        {"nivel": "quinta", "club":"Monasterio", "horario": "08:00hs", "pago":"Gratis","dia":"Domingo"},
+        {"nivel": "octava", "club":"Vilanova", "horario": "19:00hs", "pago":"$1000","dia":"Sabado"},
+        {"nivel": "septima", "club":"Le club", "horario": "20:00hs", "pago":"$1500","dia":"Jueves"},
+        {"nivel": "cuarta", "club":"Los Pinos", "horario": "20:00hs", "pago":"$1200","dia":"Martes"},
+        {"nivel": "sexta", "club":"Monasterio", "horario": "09:00hs", "pago":"$1000","dia":"Domingo"},
+        {"nivel": "septima", "club":"Vilanova", "horario": "18:00hs", "pago":"$1000","dia":"Sabado"}
+        
+]

@@ -1,4 +1,5 @@
 [
+
     {"nombre": "Gabriel", "nivel": "1", "posicion":"derecha"},
     {"nombre": "Esteban", "nivel": "2", "posicion":"derecha"},
     {"nombre": "Matias", "nivel": "3", "posicion":"izquierda"},
@@ -12,3 +13,7 @@
     {"nombre": "Julian", "nivel": "3", "posicion":"derecha"}
 
 ]
+
+
+
+
