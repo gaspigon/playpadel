@@ -26,9 +26,10 @@ fetch('torneos.json')
         div.innerHTML = `
             <p class="p-torneo">${torneos.club}
                 <ul class="lista-tor">
-                    <li>Dia: ${torneos.dia}</li>
-                    <li>Horario: ${torneos.horario}</li>
-                    <li>Inscripcion: ${torneos.pago}</li>
+                    <li><span style="font-weight: bold">Dia</span>: ${torneos.dia}</li>
+                    <li><span style="font-weight: bold">Horario</span>: ${torneos.horario}</li>
+                    <li><span style="font-weight: bold">Inscripcion</span>: ${torneos.pago}</li>
+    
                     
                 </ul>
 
