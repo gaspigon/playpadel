@@ -3,9 +3,10 @@
 
 //clase de datos para el registro de personas
 class Reserva {
-    constructor(dia, hora){
+    constructor(dia, hora, club){
         this.dia = dia;
         this.hora = hora;
+        this.club = club;
     }
 }
 
@@ -20,7 +21,7 @@ formulario.addEventListener("submit", (e)=>{
     e.preventDefault();
 
 
-    let reservaNueva = new Reserva (dia.value, horario.value);
+    let reservaNueva = new Reserva (dia.value, horario.value, club.value);
     
     Toastify({
 

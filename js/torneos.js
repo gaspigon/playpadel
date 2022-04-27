@@ -11,7 +11,7 @@ busqueda.addEventListener("keyup", (e)=>{
      
       
 //utilzo fetch para comunicarme con el .json   
-fetch('torneos.json')
+fetch('../torneos.json')
 .then ((res) => res.json())
 .then( (data) => {
 

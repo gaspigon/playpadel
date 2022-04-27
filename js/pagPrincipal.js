@@ -56,7 +56,7 @@ for (let i=0 ; i<localStorage.length; i++){
                     title: 'Tus reservas',
                     html: 
                         '<p> Dia: ' + reserva.dia + '</p>' +
-                        '<p> Horario: ' + reserva.hora + '</p>',
+                        '<p> Horario: ' + reserva.hora + '</p>' + '<p>Club: ' + reserva.club +  '</p>',
                     showClass: {
                     popup: 'animate__animated animate__fadeInDown'
                     },
