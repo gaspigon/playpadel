@@ -127,7 +127,7 @@ Swal.fire({
     
     //le pongo timeOut para que el mensaje se pueda leer unos dos segundos
     setTimeout(()=>{
-        location.href = "./html/index.html";
+        location.href = "../index.html";
     }, 1000);
     }
 
