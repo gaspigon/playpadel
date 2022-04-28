@@ -42,7 +42,7 @@ formulario.addEventListener("submit", (e)=>{
 
         //volvemos a la pagina principal
         setTimeout(()=>{
-           location.href = "../paginaprincipal.html";
+           location.href = "paginaprincipal.html";
        },1200);
 
 })
