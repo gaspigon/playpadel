@@ -71,7 +71,7 @@ function validacion(e){
             });
         }
         else if(datoInicio.email === pasoParse.email && datoInicio.contraseña === pasoParse.contraseña){
-            location.href = "../index.html";
+            location.href = "paginaprincipal.html";
         }
 
 }

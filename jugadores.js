@@ -20,7 +20,7 @@ formulario.addEventListener("submit", (e)=>{
    box.innerHTML = "";
 
 //utilzo fetch para comunicarme con el .json   
-fetch('../datos.json')
+fetch('datos.json')
     .then ((res) => res.json())
     .then( (data) => {
 
