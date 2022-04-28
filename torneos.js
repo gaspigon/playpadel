@@ -7,6 +7,9 @@ const box = document.getElementById("row");
 
 busqueda.addEventListener("keyup", (e)=>{
     
+    // let text = toLowerCase(e.target.value);
+    //PASO TODAS LAS MAYUSCULAS A MINISCULAS
+    e.target.value = e.target.value.toLowerCase();
     let text = e.target.value;
      
       
@@ -22,7 +25,7 @@ fetch('torneos.json')
         const div = document.createElement('div');
         div.classList.add("col-4");
         div.classList.add("box-torneo");
-         if(text == torneos.nivel ){
+         if(text== torneos.nivel ){
         div.innerHTML = `
             <p class="p-torneo">${torneos.club}
                 <ul class="lista-tor">
